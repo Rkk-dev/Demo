@@ -31,11 +31,9 @@ img {
 /* Slider Title */
 
 /* Footer */
-
-
 .footerText {
   color: #000000;
-  font-family:  sans-serif;
+  font-family: Centra No1, serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -67,6 +65,12 @@ img {
   font-weight: bold;
 }
 
+.footerContainer {
+  padding: 2rem 1rem;
+}
+.footerContainer > div {
+  padding:0.5rem 0;
+}
 .footerButton .btn.btn-one:hover,
 .footerButton .btn.btn-one:active {
   color: #9b455b;
@@ -94,6 +98,7 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding:0;
   }
 
   .footerText {
@@ -205,7 +210,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 1s linear infinite;
+  animation: textclip 2s linear infinite;
   display: inline-block;
 }
 
