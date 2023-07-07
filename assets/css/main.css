@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.webHeader {
+  text-align: center;
+  padding: 0.5rem;
+}
+.webHeader img {
+  width: 50px;
+}
+
+/* Slider Title */
+.webSliderTitle {
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.3px;
+  background-image: linear-gradient(#aa076b, #61045f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Slider Title */
+
+/* Footer */
+.footerText {
+  color: #000000;
+  font-family: Centra No1, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.special {
+  color: #9b455b;
+}
+
+/* Footer Button */
+.webFooter {
+  text-align: center;
+}
+.footerButton .btn.btn-one {
+  padding: 0.5rem 2.5rem;
+  border-radius: 9px;
+  transition: all 200ms ease-in-out;
+}
+
+.btn.btn-one {
+  color: #fff;
+  background: #9b455b;
+  border: 1px solid transparent;
+}
+.btn.btn-two {
+  border-radius: 9px;
+  border: 1px solid #9b455b;
+  color: #9b455b;
+  font-weight: bold;
+}
+
+.footerButton .btn.btn-one:hover,
+.footerButton .btn.btn-one:active {
+  color: #9b455b;
+  background-color: #ffffff;
+  border-color: #9b455b;
+}
+.footerButton a {
+  text-decoration: none;
+}
+
+/* Footer Button */
+
+/* Footer */
+
+@media screen and (min-width: 800px) {
+  .webHeader img {
+    width: 100px;
+  }
+
+  .webSliderTitle {
+    font-size: 60px;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footerText {
+    flex-basis: 40%;
+  }
+  .footerLine hr {
+    width: 1px;
+    height: 20px;
+  }
+  .footerButton {
+    flex-basis: 40%;
+    text-align: end;
+  }
+
+  /* Radius - Slider */
+  .carousel-item {
+    border-radius: 1rem;
+    height: 400px;
+  }
+  .carousel-item img {
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  .webFooter {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .footerText {
+    text-align: start;
+  }
+  /* Radius - Slider */
+}
+
+/* Page Loader */
+.pageLoader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(8, 8, 8, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.pageLoader img {
+  width: 100px;
+  animation: loader 500ms ease-in-out forwards infinite;
+}
+
+.webSlider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Page Loader */
+
+/* Text Animation */
+@keyframes text {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 20%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* Text Animation */
+
+/* Testing Animation */
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  from {
+    background-position: 200% center;
+  }
+}
+/* Testing Animation */
