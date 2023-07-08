@@ -67,6 +67,7 @@ img {
 
 .footerContainer {
   padding: 2rem 1rem;
+  display: block;
 }
 .footerContainer > div {
   padding:0.5rem 0;
