@@ -220,3 +220,24 @@ img {
   }
 }
 /* Testing Animation */
+
+
+/* Slider Animation */
+.carousel-item {
+  animation: slider 1s ease;
+}
+@keyframes slider {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Slider Animation */
